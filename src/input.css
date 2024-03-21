@@ -10,6 +10,9 @@
 @import './block/animateSocialsBtn.css';
 @import './block/filter.css';
 @import './block/checkbox.css';
+@import './block/tabs.css';
+@import './block/item.css';
+@import './block/404.css';
 
 /* Импорт TailWind */
 @tailwind base;
@@ -30,51 +33,51 @@
 @font-face {
     font-family: 'FuturaBold';
     src: url('../fonts/FuturaPT-Bold.ttf');
-    font-weight: normal;
+    font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'FuturaBold';
     src: url('../fonts/FuturaPT-Book.ttf');
-    font-weight: normal;
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
-
+/* 
 @font-face {
     font-family: 'Mont';
     src: url('../fonts/Montserrat-Regular.ttf');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
-}
+} */
 
 @font-face {
-    font-family: 'Muller';
+    font-family: 'MullerR';
     src: url('../src/fonts/MullerRegular.ttf');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Muller';
     src: url('../src/fonts/MullerMedium.ttf');
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Muller';
     src: url('../src/fonts/MullerBold.ttf');
-    font-weight: normal;
+    font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Muller';
     src: url('../src/fonts/MullerExtraBold.ttf');
-    font-weight: normal;
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
@@ -162,4 +165,27 @@
 
 .title {
     line-height: 85px !important;
+}
+
+
+
+.arrows__slider {
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    right: -22px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+  
+  @media(max-width:1025px) {
+    .arrows__slider {
+      display: none;
+    }
+  }
+
+iframe {
+    border-radius: 40px;
 }

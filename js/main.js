@@ -7,7 +7,10 @@ import { initPopup } from './module/popup.js'
 import { initMainSlider } from "./module/sliders.js";
 import { initFilterSlider } from "./module/sliders.js";
 import { initPopularSlider } from "./module/sliders.js";
-
+import { initParkingSlider } from "./module/sliders.js";
+import { initAccordion } from "./module/tabs.js";
+import { initCardItemSlider } from "./module/sliders.js";
+import { init404 } from "./module/404.js";
 
 window.addEventListener('DOMContentLoaded', () => {
     console.log('подключен скрипт main.js');
@@ -21,6 +24,10 @@ window.addEventListener('DOMContentLoaded', () => {
     initMainSlider();
     initFilterSlider();
     initPopularSlider();
+    initParkingSlider();
+    initAccordion();
+    init404();
+    initCardItemSlider();
     baguetteBox.run('.gallery-wrapper');
 
     

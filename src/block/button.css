@@ -152,3 +152,43 @@
 .button__order:hover:before {
   left: 100%;
 }
+
+
+
+/* button__count */
+
+.button__count {
+  padding: 14px 20px;
+  background-color: rgb(183, 9, 18);
+  color: white;
+  width: 208px;
+  z-index: 1000;
+  border-radius: 40px;
+  position: absolute;
+  bottom: 80px;
+  right: 380px;
+}
+
+
+
+@media(max-width:2600px) {
+  .button__count {
+    bottom: 80px;
+  }
+}
+
+
+
+@media(max-width:1441px) {
+  .button__count {
+    bottom: 182px;
+  }
+}
+
+
+@media(max-width:480px) {
+  .button__count {
+    left: 45px;
+    bottom: 120px;
+  }
+}

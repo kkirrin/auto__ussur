@@ -28,11 +28,6 @@ module.exports = {
       padding: '20px',
       center: true
     },
-    extend: {
-      fontFamily: {
-        'fontNokia': ['NokiaKokia', 'regular'],
-      }
-    }
   },
   plugins: [],
 }
