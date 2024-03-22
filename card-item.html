@@ -414,7 +414,7 @@
                             </div>
                             
                             <a class="bg-red flex popup-link text-white justify-center py-4 px-5 rounded-2xl"
-                            href="#popup2"
+                            href="#popup4"
                             >Купить
                         </a>
                         </div>
@@ -424,7 +424,7 @@
 
             
         
-            <!-- Популярные автомобили -->
+             <!-- Популярные автомобили -->
             <section class="pt-12 md:pt-40 popular-swiper">
                 <div class="container">
                     <h2 class="text-4xl md:text-5xl font-bold text-black">
@@ -539,17 +539,17 @@
                 </div>
             </section>
                 
-             <!-- Рассчитаем стоимость -->
-             <section class="pt-12 md:pt-36 relative">
+            <!-- Рассчитаем стоимость -->
+            <section class="pt-12 md:pt-36 relative">
                 <div class="container rounded-3xl relative h-[69vh]" >
                 <img class="relative md:absolute rounded-3xl -z-10 object-fill " src="./src/img/price/price__bg.png" alt="">
                 <div class="p-5 md:p-32">
-                    <h2 class="-z-10 uppercase text-4xl md:text-6xl font-bold">РАССЧИТАЕМ СТОИМОСТЬ!</h2>
+                    <h2 class="text-xl lg:text-5xl text-jost font-extrabold relative">РАССЧИТАЕМ СТОИМОСТЬ!</h2>
                     <p class="-z-10 font-base font-normal">
                         Заполните анкету и мы подберём автомобиль под ваш бюджет,<br> рассчитаем все расходы на покупку и доставку совершенно <br> бесплатно
                     </p>
                 </div>
-                <button class="button__count">Рассчитать</button>
+                <a href="#popup2" class="button__count popup-link">Рассчитать</a>
                 </div>
             </section>
 
@@ -558,7 +558,7 @@
 
         <footer class="footer page-section-3 pt-12 md:pt-36">
             
-            <div class="container flex md:justify-between items-start justify-evenly md:flex-nowrap flex-wrap text-white">
+            <div class="container flex justify-between items-center md:items-start flex-col md:flex-row md:flex-nowrap flex-wrap text-white">
                 <div>
                     <ul class="flex items-center justify-center gap-4">
                         <li class="pb-8 flex items-center gap-4">
@@ -613,7 +613,7 @@
                 </div>
 
                 <div>
-                    <p class="text-black">г. Уссурийск, 
+                    <p class="text-black md:text-base text-xs">г. Уссурийск, 
                         ул. Тургенева, 42</p>
                 </div>
 
@@ -635,7 +635,7 @@
                     </li>
                 </div>
 
-        
+           
             </div>
 
             <div class="container py-10">
@@ -649,66 +649,39 @@
                 </div>    
             </div> 
             
-        </footer>
+        </footer> 
 
 
-        <section id="popup1" class="popup">
+        <!-- Заявка на купить авто -->
+        <section id="popup4" class="popup">
             <div class="popup__body">
                 <div class="popup__content">
                     <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
-                            <path d="M4 1.45508L19.9099 17.365" stroke="#FCBC40"/>
-                            <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#FCBC40"/>
+                            <path d="M4 1.45508L19.9099 17.365" stroke="#333"/>
+                            <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#333"/>
                             </svg>
                     </button>
-                    <h2 class="text-start text-white z-10 font-normal md:text-4xl text-xl uppercase pb-10 ">Заказать авто</h2>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <p class="text-white md:text-base text-sm">1</p>
-                        </div>
-                        
-                        <div>
-                            <p class="text-yellow font-bold md:text-xl text-sm">1</p>
-                        </div>
+                    <h2 class="text-start text-black z-10  md:text-4xl text-xl pb-7 font-bold">Хотите купить автомобиль?</h2>
+                    <div class="flex items-start justify-start">
+                        <p class="text-black md:text-base text-sm text-start pb-7">Оставьте контакты и наш менеджер свяжется с вами 
+                            в течение 15 минут и проконсультирует по всем вопросам</p>
                     </div>
 
                     <div class="form-wrapper">
-                        <!-- <?php echo do_shortcode('[contact-form-7 id="d806c55" title="Заявка заказать авто"]'); ?> -->
-                    </div>
-                    
-                    <p class="form-section__descriptions w-full">Нажимая кнопку “Получить консультацию” я даю согласие на <a
-                            class="underline" href="#" target="_blank" rel="noopener noreferrer">обработку персональных
-                            данных</a></p>
-                </div>
-            </div>
-        </section>
-        <section id="popup2" class="popup">
-            <div class="popup__body">
-                <div class="popup__content">
-                    <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
-                            <path d="M4 1.45508L19.9099 17.365" stroke="#FCBC40"/>
-                            <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#FCBC40"/>
-                            </svg>
-                    </button>
-                    <h2 class="text-start text-white z-10 font-normal md:text-4xl text-xl uppercase pb-10 ">Заказать авто</h2>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <p class="text-white md:text-base text-sm"></p>
-                        </div>
+                        <input class="form__input" placeholder="Введите имя" />
+                        <input class="form__input" placeholder="Введите номер" />
                         
-                        <div>
-                            <p class="text-yellow font-bold md:text-xl text-sm"></p>
-                        </div>
-                    </div>
+                        <button class="form__button">
+                            Купить автомобиль
+                        </button>
 
-                    <div class="form-wrapper">
-                        <!-- <?php echo do_shortcode('[contact-form-7 id="d806c55" title="Заявка заказать авто"]'); ?> -->
+                        <p class="text-gray text-sm text-start pt-7">
+                            Нажимая кнопку «Заказать звонок» вы даёте согласие <br> на обработку персональных данных
+                        </p>
+
+                        <p class="text-red text-start font-bold pt-7">Если не хотите ждать напишите на <a href="https://" class="underline">WhatsApp<a></p>
                     </div>
-                    
-                    <p class="form-section__descriptions w-full">Нажимая кнопку “Получить консультацию” я даю согласие на <a
-                            class="underline" href="#" target="_blank" rel="noopener noreferrer">обработку персональных
-                            данных</a></p>
                 </div>
             </div>
         </section>

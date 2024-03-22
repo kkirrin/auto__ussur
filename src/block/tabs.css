@@ -9,18 +9,14 @@
     max-width: 460px;
 }
 
-/* .faq__wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    min-height: 800px;
-    color: #ffffff;
-    align-items: center;
-    justify-items: center;
-} */
-
 .faq__list {
     column-count: 2;
+}
+
+@media(max-width:769px) {
+.faq__list {
+    column-count: 1;
+}
 }
 
 ._tabs-content {

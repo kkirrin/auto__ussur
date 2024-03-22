@@ -1,10 +1,8 @@
 export const initPopup = () => {
     const popupLinks = document.querySelectorAll('.popup-link');
-    console.log(popupLinks)
     const body = document.querySelector('body');
     const lockPadding = document.querySelectorAll(".lock-padding");
     let unlock = true;
-
 
     const timeout = 800;
 
@@ -18,9 +16,14 @@ export const initPopup = () => {
                 popupOpen(curentPopup);
                 e.preventDefault();
                 
+                // Удаление padding у элементов с классом 'lock-padding'
+                lockPadding.forEach((el) => {
+                    el.style.padding = '0';
+                });
             });
         }
     }
+
     const popupCloseIcon = document.querySelectorAll('.close-popup');
     if (popupCloseIcon.length > 0) {
         for (let index = 0; index < popupCloseIcon.length; index++) {
@@ -126,5 +129,6 @@ export const initPopup = () => {
                 Element.prototype.msMatchesSelector;
         }
     })();
+    
 };
 

@@ -9,11 +9,25 @@ export const initMainSlider = () => {
                 speed: 1200,
                 // effect: "fade",
                 autoHeight: true,
-
-                spaceBetween: 15,
-                slidesPerView: 1,
                 equalHeight: true,
-
+                breakpoints: {
+                  320: {
+                      slidesPerView: 1,
+                      spaceBetween: 15
+                  },
+                  695: {
+                      slidesPerView: 1,
+                      spaceBetween: 15
+                  },
+                  767: {
+                      slidesPerView: 1,
+                      spaceBetween: 15
+                  },
+                  1200: {
+                      slidesPerView: 1,
+                      spaceBetween:10
+                  }
+                  },
                 // If we need pagination
                 pagination: {
                   clickable: true,
@@ -106,8 +120,8 @@ export const initFilterSlider = () => {
                         slidesPerView: 2,
                         spaceBetween: 15
                     },
-                    767: {
-                        slidesPerView: 3,
+                    769: {
+                        slidesPerView: 2,
                         spaceBetween: 20
                     },
                     1200: {
@@ -154,8 +168,8 @@ export const initPopularSlider = () => {
                         slidesPerView: 2,
                         spaceBetween: 15
                     },
-                    767: {
-                        slidesPerView: 3,
+                    769: {
+                        slidesPerView: 2,
                         spaceBetween: 20
                     },
                     1200: {
@@ -202,7 +216,7 @@ export const initParkingSlider = () => {
                         spaceBetween: 15
                     },
                     767: {
-                        slidesPerView: 3,
+                        slidesPerView: 2,
                         spaceBetween: 20
                     },
                     1200: {

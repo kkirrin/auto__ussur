@@ -21,7 +21,7 @@
 
 
 .btn__catalog {
-  z-index: 1000;
+  z-index: 10;
   position: absolute;
   left: 70px;
   bottom: 40px;
@@ -162,7 +162,7 @@
   background-color: rgb(183, 9, 18);
   color: white;
   width: 208px;
-  z-index: 1000;
+  z-index: 10;
   border-radius: 40px;
   position: absolute;
   bottom: 80px;

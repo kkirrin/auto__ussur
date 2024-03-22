@@ -12,6 +12,7 @@
     -webkit-appearence: none;
     -webkit-tap-highlight-color: transparent;
     background-color: #e40604;
+    
 
 }
 .btn__menu svg {
@@ -85,11 +86,16 @@
     cursor: pointer;
     -webkit-appearence: none;
     -webkit-tap-highlight-color: transparent;
+    z-index: 1000;
 }
 
 .btn__menu--mobile.active {
     transition: 1s ease;
-    background-color: #fcbc40;
+    /* background-color: #fcbc40; */
+}
+.btn__menu--mobile.active svg {
+    transition: 1s ease;
+    stroke: white;
 }
 .btn__menu--mobile svg {
     width: 64px;
