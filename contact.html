@@ -32,15 +32,11 @@
         
                         <div> 
                             <ul class="mobile gap-2 flex-wrap text-main-black hidden md:flex items-center justify-center mobile__menu__style">
-                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold" href="/about_company">Каталог</a></li>
-                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold nav-link" href="#"
-                                        data-goto=".page-section-2">О компании</a></li>
-                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold nav-link" href="#"
-                                        data-goto=".page-section-3">Отзывы</a></li>
-                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold nav-link" href="#"
-                                        data-goto=".page-section-4">Контакты</a></li>
-                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold nav-link" href="#"
-                                        data-goto=".page-section-4">Договор</a></li>
+                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold" href="/catalog.html">Каталог</a></li>
+                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold" href="/about.html">О компании</a></li>
+                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold" href="/review.html">Отзывы</a></li>
+                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold" href="/contact.html">Контакты</a></li>
+                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold" href="/">Договор</a></li>
                                 
                             </ul>
                         </div>
@@ -106,13 +102,13 @@
                             </a>
                         </li>
         
-                        <li class="hidden xs:hidden sm:flex md:hidden sm:list-none">
+                        <li class="flex xs:flex sm:flex md:hidden sm:list-none">
                             <a href="https://www.instagram.com/geometry_nhk/">
                                 <img class="transform hover:scale-105 transition-all p-2" src="src/img/icons/tg.svg" alt="" >
                             </a>
                         </li>
         
-                        <li class="hidden xs:hidden sm:flex md:hidden">
+                        <li class="flex xs:flex sm:flex md:hidden">
                             <a class="nav-link" href="https://api.whatsapp.com/send/?phone=79510154751">
                             <img class="transform hover:scale-105 transition-all p-2" src="src/img/icons/sap.svg" alt="" >
                             </a>
@@ -211,7 +207,7 @@
 
 
             <!-- Карта -->
-            <section class="pt-12 md:pt-14">
+            <section class="pt-12 md:pt-14 ">
                 <div class="container">
                     <h2 class="text-4xl md:text-5xl font-bold text-blac pb-12">
                         Контактная информация
@@ -250,7 +246,7 @@
             </section>
 
             <!-- Карта -->
-            <section class="pt-12 md:pt-36">
+            <section class="pt-12 md:pt-36 contact__map">
                 <div class="container">
                     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A40c23e493b20b3fcf4e84ebb21a3ba8f240084f4def0c23d942e3e03c164c6e9&amp;width=1228&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
@@ -260,7 +256,7 @@
             <section class="pt-12 md:pt-36">
                 <div class="container relative">
 
-                    <h2 class="font-bold md:text-5xl text-xl pb-8">Собственная стоянка в Уссурийске</h2>
+                    <h2 class="text-center md:text-start text-4xl lg:text-5xl font-extrabold relative pb-5 md:pb-10">Собственная стоянка в Уссурийске</h2>
 
                     <div class="arrows__slider">             
                         <button
@@ -275,15 +271,21 @@
         
                     <div class="parking-wrapper overflow-hidden">
                         <div class="parking-item">
-                            <div class="swiper-wrapper">
+                            <div class="swiper-wrapper gallery-wrapper">
                                 <div class="swiper-slide p-5 transform hover:scale-105 transition-all">
-                                    <img class="rounded-3xl" src="./src/img/stop/stopping.png" alt="">
+                                    <a href="src/img/stop/stopping.png">
+                                        <img class="rounded-3xl" src="./src/img/stop/stopping.png" alt="" data-caption="Image caption">
+                                    </a>
                                 </div>            
                                 <div class="swiper-slide p-5 transform hover:scale-105 transition-all">
-                                    <img class="rounded-3xl" src="./src/img/stop/stopping.png" alt="">
+                                    <a href="src/img/stop/stopping.png">
+                                        <img class="rounded-3xl" src="./src/img/stop/stopping.png" alt="" data-caption="Image caption">
+                                    </a>
                                 </div>            
                                 <div class="swiper-slide p-5 transform hover:scale-105 transition-all">
-                                    <img class="rounded-3xl" src="./src/img/stop/stopping.png" alt="">
+                                    <a href="src/img/stop/stopping.png">
+                                        <img class="rounded-3xl" src="./src/img/stop/stopping.png" alt="" data-caption="Image caption">
+                                    </a>
                                 </div>            
                             </div>
                         </div> 

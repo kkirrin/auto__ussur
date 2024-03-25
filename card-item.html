@@ -32,15 +32,11 @@
         
                         <div> 
                             <ul class="mobile gap-2 flex-wrap text-main-black hidden md:flex items-center justify-center mobile__menu__style">
-                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold" href="/about_company">Каталог</a></li>
-                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold nav-link" href="#"
-                                        data-goto=".page-section-2">О компании</a></li>
-                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold nav-link" href="#"
-                                        data-goto=".page-section-3">Отзывы</a></li>
-                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold nav-link" href="#"
-                                        data-goto=".page-section-4">Контакты</a></li>
-                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold nav-link" href="#"
-                                        data-goto=".page-section-4">Договор</a></li>
+                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold" href="/catalog.html">Каталог</a></li>
+                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold" href="/about.html">О компании</a></li>
+                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold" href="/review.html">Отзывы</a></li>
+                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold" href="/contact.html">Контакты</a></li>
+                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold" href="/">Договор</a></li>
                                 
                             </ul>
                         </div>
@@ -106,13 +102,13 @@
                             </a>
                         </li>
         
-                        <li class="hidden xs:hidden sm:flex md:hidden sm:list-none">
+                        <li class="flex xs:flex sm:flex md:hidden sm:list-none">
                             <a href="https://www.instagram.com/geometry_nhk/">
                                 <img class="transform hover:scale-105 transition-all p-2" src="src/img/icons/tg.svg" alt="" >
                             </a>
                         </li>
         
-                        <li class="hidden xs:hidden sm:flex md:hidden">
+                        <li class="flex xs:flex sm:flex md:hidden">
                             <a class="nav-link" href="https://api.whatsapp.com/send/?phone=79510154751">
                             <img class="transform hover:scale-105 transition-all p-2" src="src/img/icons/sap.svg" alt="" >
                             </a>
@@ -212,13 +208,13 @@
 
             <section class="pt-12 md:pt-14">
                 <div class="container">
-                    <h3 class="font-bold md:text-4xl text-xl pb-14">
+                    <h2 class="text-start text-4xl lg:text-5xl font-extrabold relative pb-5">
                         <!-- <?php the_field('marka_name'); ?> <?php the_field('model_name'); ?> -->
                            
                                 <!-- <?php the_field('price'); ?>₽ -->
                                 НАЗВАНИЕ АВТО
                         
-                    </h3>
+                    </h2>
                     <div class="flex flex-col md:flex-row  gap-10 ">
                         <section class="section product__item w-full md:w-2/3">
                             <div class="container">
@@ -226,7 +222,7 @@
                                 <div class="card card--product">
                                     <div class="slider card__slider relative">
                                         <div class="swiper slider__slider">
-                                            <div class="swiper-wrapper">
+                                            <div class="swiper-wrapper gallery-wrapper">
                                                
                                             <!-- <?php
                                                 $photos = get_field('галерея');
@@ -241,28 +237,44 @@
                                                 }
                                             ?> -->
                                                 <div class="swiper-slide">
-                                                    <img class="img_car md:w-[460px] md:h-[340px] w-[335px] h-[290px]" src="src/img/item/item_slide_1.png" alt="">
+                                                    <a href="src/img/item/item_slide_3.png">
+                                                        <img class="img_car md:w-[460px] md:h-[340px] w-[335px] h-[290px]" src="src/img/item/item_slide_1.png" alt="" data-caption="Image caption">>
+                                                    </a>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img class="img_car md:w-[460px] md:h-[340px] w-[335px] h-[290px]" src="src/img/item/item_slide_2.png" alt="">
+                                                    <a href="src/img/item/item_slide_3.png">
+                                                        <img class="img_car md:w-[460px] md:h-[340px] w-[335px] h-[290px]" src="src/img/item/item_slide_2.png" alt="" data-caption="Image caption">>
+                                                    </a>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img class="img_car md:w-[460px] md:h-[340px] w-[335px] h-[290px]" src="src/img/item/item_slide_1.png" alt="">
+                                                    <a href="src/img/item/item_slide_3.png">
+                                                        <img class="img_car md:w-[460px] md:h-[340px] w-[335px] h-[290px]" src="src/img/item/item_slide_1.png" alt="" data-caption="Image caption">>
+                                                    </a>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img class="img_car md:w-[460px] md:h-[340px] w-[335px] h-[290px]" src="src/img/item/item_slide_2.png" alt="">
+                                                    <a href="src/img/item/item_slide_3.png">
+                                                        <img class="img_car md:w-[460px] md:h-[340px] w-[335px] h-[290px]" src="src/img/item/item_slide_2.png" alt="" data-caption="Image caption">>
+                                                    </a>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img class="img_car md:w-[460px] md:h-[340px] w-[335px] h-[290px]" src="src/img/item/item_slide_1.png" alt="">
+                                                    <a href="src/img/item/item_slide_3.png">
+                                                        <img class="img_car md:w-[460px] md:h-[340px] w-[335px] h-[290px]" src="src/img/item/item_slide_1.png" alt="" data-caption="Image caption">>
+                                                    </a>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img class="img_car md:w-[460px] md:h-[340px] w-[335px] h-[290px]" src="src/img/item/item_slide_2.png" alt="">
+                                                    <a href="src/img/item/item_slide_3.png">
+                                                        <img class="img_car md:w-[460px] md:h-[340px] w-[335px] h-[290px]" src="src/img/item/item_slide_2.png" alt="" data-caption="Image caption">>
+                                                    </a>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img class="img_car md:w-[460px] md:h-[340px] w-[335px] h-[290px]" src="src/img/item/item_slide_1.png" alt="">
+                                                    <a href="src/img/item/item_slide_3.png">
+                                                        <img class="img_car md:w-[460px] md:h-[340px] w-[335px] h-[290px]" src="src/img/item/item_slide_1.png" alt="" data-caption="Image caption">>
+                                                    </a>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img class="img_car md:w-[460px] md:h-[340px] w-[335px] h-[290px]" src="src/img/item/item_slide_2.png" alt="">
+                                                    <a href="src/img/item/item_slide_3.png">
+                                                        <img class="img_car md:w-[460px] md:h-[340px] w-[335px] h-[290px]" src="src/img/item/item_slide_2.png" alt="" data-caption="Image caption">>
+                                                    </a>
                                                 </div>
                                             </div>
                                        
@@ -284,22 +296,34 @@
                                             ?> -->
         
                                             <div class="swiper-slide">
-                                                <img class="img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="./src/img/item/item_slide_3.png" alt="">
+                                                <a href="src/img/item/item_slide_3.png">
+                                                    <img class="img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="./src/img/item/item_slide_3.png" alt="" data-caption="Image caption">>
+                                                </a>
                                             </div>
                                             <div class="swiper-slide">
-                                                <img class="img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="./src/img/item/item_slide_3.png" alt="">
+                                                <a href="src/img/item/item_slide_3.png">
+                                                    <img class="img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="./src/img/item/item_slide_3.png" alt="" data-caption="Image caption">>
+                                                </a>
                                             </div>
                                             <div class="swiper-slide">
-                                                <img class="img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="./src/img/item/item_slide_3.png" alt="">
+                                                <a href="src/img/item/item_slide_3.png">
+                                                    <img class="img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="./src/img/item/item_slide_3.png" alt="" data-caption="Image caption">>
+                                                </a>
                                             </div>
                                             <div class="swiper-slide">
-                                                <img class="img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="./src/img/item/item_slide_3.png" alt="">
+                                                <a href="src/img/item/item_slide_3.png">
+                                                    <img class="img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="./src/img/item/item_slide_3.png" alt="" data-caption="Image caption">>
+                                                </a>
                                             </div>
                                             <div class="swiper-slide">
-                                                <img class="img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="./src/img/item/item_slide_3.png" alt="">
+                                                <a href="src/img/item/item_slide_3.png">
+                                                    <img class="img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="./src/img/item/item_slide_3.png" alt="" data-caption="Image caption">>
+                                                </a>
                                             </div>
                                             <div class="swiper-slide">
-                                                <img class="img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="./src/img/item/item_slide_3.png" alt="">
+                                                <a href="src/img/item/item_slide_3.png">
+                                                    <img class="img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="./src/img/item/item_slide_3.png" alt="" data-caption="Image caption">>
+                                                </a>
                                             </div>
                                               
                                             </div>

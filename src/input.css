@@ -182,12 +182,12 @@
 .arrows__slider {
     position: absolute;
     top: 55%;
-    left: -22px;
-    right: -22px;
+    left: 0px;
+    right: 0px;
     transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
-    z-index: 10;
+    z-index: 1;
   }
   
   @media(max-width:1025px) {
@@ -200,8 +200,12 @@
 
 iframe {
     border-radius: 40px;
+    /* width: inherit; */
 }
 
+.contact__map iframe {
+     width: inherit !important;
+}
 
 @media(max-width:1300px) {
     iframe {
