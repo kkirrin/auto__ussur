@@ -40,6 +40,16 @@
     background: white;
     border-radius: 20px;
 }
+.popup__content__today {
+    max-width: auto;
+    min-height: auto;
+    position: relative;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+}
 
 
 .popup__text {

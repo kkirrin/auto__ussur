@@ -2,9 +2,9 @@
     width: 40px;
     height: 40px;
     padding: 5px;
-    color: #D1D618;
+    color: rgb(183, 9, 18);
     border: 2px solid #ffffff;
-    background-color:#D1D618;
+    background-color:rgb(183, 9, 18);
     border-radius: 100%;
     cursor: pointer;
     position: fixed;

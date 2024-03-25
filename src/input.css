@@ -116,8 +116,18 @@
 
 /* Директивы классов */
 
+@media(max-width:769px) {
+    h2 {
+        line-height: 100%;
+    }
+}
 
 
+@media(max-width:480px) {
+    h2 {
+        line-height: 100%;
+    }
+}
 
 
 /* Прочие классы */
@@ -158,7 +168,7 @@
 }
 
 .header-fix {
-    background: rgba(205, 78, 78, 0.8) !important;
+    background: rgba(255, 255, 255, 1) !important;
     box-shadow: 0 3px 6px rgba(235, 235, 235, 0.16), 0 3px 6px rgba(0, 0, 0, .23) !important;
     padding-bottom: 10px;
 }
@@ -171,7 +181,7 @@
 
 .arrows__slider {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: -22px;
     right: -22px;
     transform: translateY(-50%);
@@ -244,4 +254,18 @@ iframe {
 
 .lock-padding {
     padding: 0;
+}
+
+
+@media(max-width: 480px) {
+    .counter-list li {
+        width: -webkit-fill-available;
+        text-align: center;
+    }
+}
+
+@media(max-width:769px) {
+    .how__we__work div {
+        height: -webkit-fill-available;
+    }
 }

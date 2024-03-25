@@ -181,52 +181,78 @@
 
         <main>
             <h1 class="visually-hidden">Скрытый заголовок</h1>   
+
+            
+            <section class="pt-32">
+                <div class="container">
+
+                    <div class="breadcrumb">
+                        <ul class="breadcrumb__list flex items-center justify-start gap-2">
+                            <li class="breadcrumb__item text-bg-black opacity-60 ">
+                                <a href="/" class="font-medium">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="opacity-60 text-bg-black">
+                                -
+                            </li>
+                            <li class="breadcrumb__item">
+                                <span class="font-bold text-bg-black">Отзывы</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
     
             <!-- Секция отзывы -->
-            <section class="pt-12 md:pt-36">
+            <section class="pt-12 md:pt-14">
                 <div class="container relative">
 
-                    <h2 class="text-xl lg:text-5xl text-jost font-extrabold relative">Реальные отзывы клиентов </h2>
+                    <div class="flex justify-between items-center flex-col md:flex-row">
+                        <h2 class="text-center md:text-start text-4xl lg:text-5xl font-extrabold relative">Реальные отзывы клиентов </h2>
+
+                        <a class="flex justify-center py-4 my-4 button popup-link" href="#popup6">Оставить отзыв</a>
+                        
+                    </div>
                     
-                    <div class="grid  grid-cols-1 md:grid-cols-3">
+                    <div class="grid grid-cols-1 md:grid-cols-3">
+                        <div class="rounded-2xl transform hover:scale-105 transition-all w-full">
+                            <video poster="./src/img/review/review_3.png"></video>
+                        </div>
 
-                            <div class="rounded-2xl transform hover:scale-105 transition-all w-full">
-                                <video poster="./src/img/review/review_3.png"></video>
-                            </div>
-
-                            <div class="p-5">
-                                <div class="flex flex-col shadow-md bg-white p-7 rounded-2xl transform hover:scale-105 transition-all">
-                                    <div class="flex flex-row justify-between pb-7">
-                                        <div class="flex gap-5">
-                                            <p>Аватар</p>
-                                            <p>Дмитрий</p>
-                                        </div>
-        
-                                        <div class="flex gap-2">
-                                            <p>5.0</p>
-                                            <p><img src="./src/img/icons/star.svg" alt=""></p>
-                                        </div>
+                        <div class="p-5">
+                            <div class="flex flex-col shadow-md bg-white p-7 rounded-2xl transform hover:scale-105 transition-all">
+                                <div class="flex flex-row justify-between pb-7">
+                                    <div class="flex gap-5">
+                                        <p>Аватар</p>
+                                        <p>Дмитрий</p>
                                     </div>
-        
-                                    <div class="text-base pb-7 textFull">
-                                        Благодарю компанию AutoPROussur, в помощи приобретения автомобиля Toyota Raсtis из Японии. В особенности менеджеру Алексею, за отличное сотрудничество и понимание. Автомобиль был доставлен в срок, в состоянии соответствуещему фото без нареканий. Забирал машину сам, эмоции переполняли т.к оказалось лучше чем ожидал. Заказывайте автомобили через эту компанию, все честно, грамотно, и без всякого обмана!
-                                    </div>
-        
-                                    <div class="flex gap-7 pb-7">
-                                        <img class="rounded-2xl" src="./src/img/review/review_2.png">
-                                        <img class="rounded-2xl" src="./src/img/review/review_2.png">
-                                    </div>
-        
-                                    <div class="text-gray">
-                                        26.02.2024  
+    
+                                    <div class="flex gap-2">
+                                        <p>5.0</p>
+                                        <p><img src="./src/img/icons/star.svg" alt=""></p>
                                     </div>
                                 </div>
+    
+                                <div class="text-base pb-7 textFull">
+                                    Благодарю компанию AutoPROussur, в помощи приобретения автомобиля Toyota Raсtis из Японии. В особенности менеджеру Алексею, за отличное сотрудничество и понимание. Автомобиль был доставлен в срок, в состоянии соответствуещему фото без нареканий. Забирал машину сам, эмоции переполняли т.к оказалось лучше чем ожидал. Заказывайте автомобили через эту компанию, все честно, грамотно, и без всякого обмана!
+                                </div>
+    
+                                <div class="flex gap-7 pb-7">
+                                    <img class="rounded-2xl" src="./src/img/review/review_2.png">
+                                    <img class="rounded-2xl" src="./src/img/review/review_2.png">
+                                </div>
+    
+                                <div class="text-gray">
+                                    26.02.2024  
+                                </div>
                             </div>
-                
-                            <div class="rounded-2xl transform hover:scale-105 transition-all w-full">
-                                <video poster="./src/img/review/review_3.png"></video>
-                            </div>
-                   
+                        </div>
+            
+                        <div class="rounded-2xl transform hover:scale-105 transition-all w-full">
+                            <video poster="./src/img/review/review_3.png"></video>
+                        </div>
                     </div>
                   
                 </div>
@@ -234,163 +260,127 @@
             
         </main>
 
+      
         <footer class="footer page-section-3 pt-12 md:pt-36">
-            
-            <div class="container flex md:justify-between items-start justify-evenly md:flex-nowrap flex-wrap text-white">
-                <div>
-                    <ul class="flex items-center justify-center gap-4">
-                        <li class="pb-8 flex items-center gap-4">
+            <div class="container">
+                <a href="index.html">
+                    <img class="block sm:hidden md:hidden" src="src/img/logo.svg" alt="">
+                </a>
+                <div class="container flex justify-between md:flex-nowrap flex-wrap text-white pt-10">
+                    <div class="hidden sm:block md:block">
+                        <a href="index.html">
                             <img src="src/img/logo.svg" alt="">
-                        </li>  
-                    </ul>
-                </div>
-                <div>
-                    <ul class="text-gray md:text-base text-xs columns-3">
-                        <li class="pb-8 text-black transform hover:scale-105 transition-all">
-                            Каталог
-                        </li>  
-                        <li class="pb-8 text-black transform hover:scale-105 transition-all">
-                            О компании
-                        </li>  
-                        <li class="pb-8 text-black transform hover:scale-105 transition-all">
-                            Отзывы
-                        </li>  
-                        <li class="pb-8 text-black transform hover:scale-105 transition-all">
-                            Контакты
-                        </li>  
-                        <li class="pb-8 text-black transform hover:scale-105 transition-all">
-                            Договор
-                        </li>  
-                    </ul>
-                </div>
-
-                <div>
-                    <ul class="text-gray md:text-base text-xs">
-                        <li>
-                            <a class="font-bold text-black transform hover:scale-105 transition-all" href="tel:+79510288418">
-                                +7 951 028-84-18 
-                            </a>
-                        </li>
-                        <li>
-                            <a class="font-bold text-black transform hover:scale-105 transition-all" href="tel:+79510154751">
-                                +7 951 015-47-51
-                            </a>
-                        </li>
-                        <li>
-                            <a class="font-bold text-black transform hover:scale-105 transition-all" href="tel:+79510154751">
-                                +7 951 015-47-51
-                            </a>
-                        </li>
-
-                        <li>
-                            <img class="pb-2" src="./src/img/icons_nav/email.svg" alt="">
-                            <a href="mailto:lehachechel10@gmail.com" class="text-white font-bold transform hover:scale-105 transition-all">lehachechel10@gmail.com</a>
-                        
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <p class="text-black">г. Уссурийск, 
-                        ул. Тургенева, 42</p>
-                </div>
-
-                <div class="flex">
-                    <li class="mr-4 list-none gap-2">
-                        <a href="https://api.whatsapp.com/send/?phone=79532109127">
-                            <img class=" transform hover:scale-105 transition-all" src="src/img/icons/sap.svg" alt="" >
                         </a>
-                    </li>
-                    <li class="mr-4 list-none gap-2">
-                        <a href="https://api.whatsapp.com/send/?phone=79532109127">
-                            <img class=" transform hover:scale-105 transition-all" src="src/img/icons/tg.svg" alt="" >
-                        </a>
-                    </li>
-                    <li class="mr-4 list-none gap-2">
-                        <a href="https://api.whatsapp.com/send/?phone=79532109127">
-                            <img class=" transform hover:scale-105 transition-all" src="src/img/icons/youtube.svg" alt="" >
-                        </a>
-                    </li>
-                </div>
-
-           
-            </div>
-
-            <div class="container py-10">
-                <div class="flex items-center justify-between text-gray pt-10">
-                    <div class="md:text-sm text-xs">
-                        © AutoPROussur. Все права защищены
                     </div>
-                    <a href="" class="md:text-sm text-xs underline">
-                        Политика конфиденциальности
-                    </a>
-                </div>    
-            </div> 
+                    <div>
+                        <ul class="text-gray md:text-base text-xs columns-1 sm:columns-1 md:columns-3">
+                            <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
+                                Каталог
+                            </li>  
+                            <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
+                                О компании
+                            </li>  
+                            <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
+                                Отзывы
+                            </li>  
+                            <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
+                                Контакты
+                            </li>  
+                            <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
+                                Договор
+                            </li>  
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="text-gray md:text-base text-xs">
+                            <li class="pb-5">
+                                <a class=" font-bold text-black transform hover:scale-105 transition-all" href="tel:+79510288418">
+                                    +7 951 028-84-18 
+                                </a>
+                            </li>
+                            <li class="pb-5">
+                                <a class=" font-bold text-black transform hover:scale-105 transition-all" href="tel:+79510154751">
+                                    +7 951 015-47-51
+                                </a>
+                            </li>
+                            <li class="pb-5">
+                                <a href="mailto:lehachechel10@gmail.com" class=" font-bold text-black transform hover:scale-105 transition-all">lehachechel10@gmail.com</a>
+                            </li>
+    
+                            <li class=" text-black md:text-base text-xs block md:hidden">г. Уссурийск, 
+                                ул. Тургенева, 42</li>
+    
+                          
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <p class="text-black md:text-base text-xs hidden md:block">г. Уссурийск, 
+                            ул. Тургенева, 42</p>
+                    </div>
+    
+                    <div class="flex flex-row sm:flex-col md:flex-row gap-1">
+                        <li class="mr-4 list-none gap-2">
+                            <a href="https://api.whatsapp.com/send/?phone=79510154751">
+                                <img class=" transform hover:scale-105 transition-all" src="src/img/icons/sap.svg" alt="" >
+                            </a>
+                        </li>
+                        <li class="mr-4 list-none gap-2">
+                            <a href="https://t.me/autoprouss">
+                                <img class=" transform hover:scale-105 transition-all" src="src/img/icons/tg.svg" alt="" >
+                            </a>
+                        </li>
+                        <li class="mr-4 list-none gap-2">
+                            <a href="">
+                                <img class=" transform hover:scale-105 transition-all" src="src/img/icons/youtube.svg" alt="" >
+                            </a>
+                        </li>
+                    </div> 
+                </div>
+                
+                <div class="container py-10">
+                    <div class="flex items-center justify-between text-gray pt-10">
+                        <div class="md:text-sm text-xs">
+                            © AutoPROussur. Все права защищены
+                        </div>
+                        <a href="" class="md:text-sm text-xs underline">
+                            Политика конфиденциальности
+                        </a>
+                    </div>    
+                </div> 
+            </div>
             
         </footer>
 
 
-        <section id="popup1" class="popup">
+        <!-- Подобрать авто -->
+        <section id="popup6" class="popup">
             <div class="popup__body">
                 <div class="popup__content">
                     <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
-                            <path d="M4 1.45508L19.9099 17.365" stroke="#FCBC40"/>
-                            <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#FCBC40"/>
+                            <path d="M4 1.45508L19.9099 17.365" stroke="#333"/>
+                            <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#333"/>
                             </svg>
                     </button>
-                    <h2 class="text-start text-white z-10 font-normal md:text-4xl text-xl uppercase pb-10 ">Заказать авто</h2>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <p class="text-white md:text-base text-sm">1</p>
-                        </div>
-                        
-                        <div>
-                            <p class="text-yellow font-bold md:text-xl text-sm">1</p>
-                        </div>
+                    <h2 class="text-start text-black z-10  md:text-4xl text-xl pb-7 font-bold">Оставьте отзыв</h2>
+                    <div class="flex items-start justify-start">
+                        <p class="text-black md:text-base text-sm text-start pb-7">Оцените работы компании</p>
                     </div>
 
                     <div class="form-wrapper">
-                        <!-- <?php echo do_shortcode('[contact-form-7 id="d806c55" title="Заявка заказать авто"]'); ?> -->
-                    </div>
-                    
-                    <p class="form-section__descriptions w-full">Нажимая кнопку “Получить консультацию” я даю согласие на <a
-                            class="underline" href="#" target="_blank" rel="noopener noreferrer">обработку персональных
-                            данных</a></p>
-                </div>
-            </div>
-        </section>
-        <section id="popup2" class="popup">
-            <div class="popup__body">
-                <div class="popup__content">
-                    <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
-                            <path d="M4 1.45508L19.9099 17.365" stroke="#FCBC40"/>
-                            <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#FCBC40"/>
-                            </svg>
-                    </button>
-                    <h2 class="text-start text-white z-10 font-normal md:text-4xl text-xl uppercase pb-10 ">Заказать авто</h2>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <p class="text-white md:text-base text-sm"></p>
-                        </div>
+                        <input class="form__input" placeholder="Введите имя" />
+                        <textarea class="form__input" placeholder="Опишите впечатления"></textarea>
+                        <input class="form__input" type="file">
                         
-                        <div>
-                            <p class="text-yellow font-bold md:text-xl text-sm"></p>
-                        </div>
-                    </div>
+                        <button class="form__button">
+                            Оставьте отзыв
+                        </button>
 
-                    <div class="form-wrapper">
-                        <!-- <?php echo do_shortcode('[contact-form-7 id="d806c55" title="Заявка заказать авто"]'); ?> -->
                     </div>
-                    
-                    <p class="form-section__descriptions w-full">Нажимая кнопку “Получить консультацию” я даю согласие на <a
-                            class="underline" href="#" target="_blank" rel="noopener noreferrer">обработку персональных
-                            данных</a></p>
                 </div>
             </div>
         </section>
-
             
     <div class="scroll-top">
         <img src="./src/img/icons/arrow.svg" alt="стрелка вверх">

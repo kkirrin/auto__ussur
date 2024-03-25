@@ -11,6 +11,7 @@ import { initParkingSlider } from "./module/sliders.js";
 import { initAccordion } from "./module/tabs.js";
 import { initCardItemSlider } from "./module/sliders.js";
 import { init404 } from "./module/404.js";
+import { initStickyHeader } from "./module/sticky-header.js";
 
 window.addEventListener('DOMContentLoaded', () => {
     console.log('подключен скрипт main.js');
@@ -28,7 +29,9 @@ window.addEventListener('DOMContentLoaded', () => {
     initAccordion();
     init404();
     initCardItemSlider();
+    initStickyHeader();
     baguetteBox.run('.gallery-wrapper');
+
 
     
 

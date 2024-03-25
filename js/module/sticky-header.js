@@ -1,6 +1,7 @@
 export const initStickyHeader = () => {
 
     const header = document.querySelector('header');
+    console.log(header);
 
     if (header) {
         window.addEventListener('scroll', () => {
